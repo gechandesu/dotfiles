@@ -1,0 +1,11 @@
+# Навигация
+
+alias cls='clear'
+alias \.\.='cd ..'
+
+# Работа с пакетами
+
+alias destroy='sudo apt remove --purge -y'
+
+# Поиск и регулярные выражения
+

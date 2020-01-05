@@ -6,6 +6,7 @@ alias l='ls -CF'
 alias cls='clear'
 alias \.\.='cd ..'
 
+# TODO узнать размер папки или файла alias size=''
 
 # Запуск программ
 

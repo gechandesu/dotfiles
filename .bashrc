@@ -38,3 +38,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+
+# Темит приглашение командной строки
+PS1="\e[1;92m\u@\h\\e[0;37m\w:\e[m\e[1;31m\$\e[m \e[m"

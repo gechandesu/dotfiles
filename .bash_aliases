@@ -1,10 +1,11 @@
 # Навигация
+alias ls='ls --color=auto'  
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias cls='clear'
 alias \.\.='cd ..'
-alias size='du -h --max-depth=1' # Узнать размер папки или файла
+alias du='du -h'
 
 
 # Запуск программ

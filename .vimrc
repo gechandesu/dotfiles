@@ -12,6 +12,7 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 
 " Highlight unwanted Spaces and Tabs
 set listchars=tab:▸\ ,trail:·
+" set listchars=tab:⟶\ ,trail:·
 set list
 
 " Enable syntax highlighting

@@ -1,21 +1,16 @@
-# Навигация
-alias ls='ls --color=auto'  
+# Navigation
+alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias cls='clear'
 alias \.\.='cd ..'
-alias du='du -h'
+alias dev='cd /mnt/develop/'
 
-
-# Запуск программ
+# Programm aliases
+alias p='python3'
 alias py='python3'
-alias pym='python3 -m' # запустить модуль python как скрипт
+alias pym='python3 -m'
 
-
-# Работа с пакетами
+# Package management
 alias destroy='sudo apt remove --purge -y'
-
-
-# Поиск и регулярные выражения
-# TODO

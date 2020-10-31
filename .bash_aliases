@@ -5,6 +5,7 @@ alias la='ls -A'
 alias l='ls -lF'
 alias cls='clear'
 alias \.\.='cd ..'
+alias r='ranger'
 alias dev='cd /mnt/develop/'
 
 # Programm aliases

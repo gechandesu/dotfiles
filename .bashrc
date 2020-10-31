@@ -36,3 +36,11 @@ fi
 
 # with only "$" and current path
 PS1="\[\033[0;92m\]\w\[\033[0;15m\]:\$ "
+
+# Tilix config for open new tile in the same directory.
+# https://github.com/gnunn1/tilix/wiki/VTE-Configuration-Issue
+# On Ubuntu run:
+# sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+if [[ $TILIX_ID ]]; then
+        source /etc/profile.d/vte.sh
+fi

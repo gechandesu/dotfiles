@@ -9,6 +9,7 @@ shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=10000
 HISTCONTROL=ignoreboth
+HISTTIMEFORMAT="%d %b %Y %T %z "
 
 # Sync history between different terminals
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r;"

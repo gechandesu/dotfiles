@@ -17,7 +17,7 @@ PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; h
 # Adapt rows and columns to window size
 shopt -s checkwinsize
 
-# Advanced command completion
+# Command completion
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -31,12 +31,13 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Command line prompt
-# PS1="\e[1;92m\u@\h\\e[0;37m\w:\e[1;31m\$ \e[m"
-# PS1="\[\033[1;92m\]\u@\h\[\033[0;15m\]:\[\033[0;92m\]\w\[\033[0;15m\]\$ "
+# Extend PATH
+export PATH=$PATH:$HOME/.local/bin
 
-# with only "$" and current path
-PS1="\[\033[0;92m\]\w\[\033[0;15m\]:\$ "
+# Command line prompt
+GREEN="\[\033[0;92m\]"
+NO_COLOR="\[\033[0;15m\]"
+PS1="> ${GREEN}\w${NO_COLOR}\n\$ "
 
 # Tilix config for open new tile in the same directory.
 # https://github.com/gnunn1/tilix/wiki/VTE-Configuration-Issue

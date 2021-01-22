@@ -35,9 +35,7 @@ fi
 export PATH=$PATH:$HOME/.local/bin
 
 # Command line prompt
-GREEN="\[\033[0;92m\]"
-NO_COLOR="\[\033[0;15m\]"
-PS1="> ${GREEN}\w${NO_COLOR}\n\$ "
+PS1="> \[\033[0;92m\]\w\[\033[0;15m\]\n\$ "
 
 # Tilix config for open new tile in the same directory.
 # https://github.com/gnunn1/tilix/wiki/VTE-Configuration-Issue

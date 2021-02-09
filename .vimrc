@@ -10,6 +10,9 @@ set autoindent
 " Indentation for Python
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" Prevent auto-indenting for paste
+set paste
+
 " Highlight unwanted Spaces and Tabs
 set listchars=tab:▸\ ,trail:·
 " set listchars=tab:⟶\ ,trail:·
